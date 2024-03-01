@@ -21,13 +21,13 @@ DecayTimecourse.txt: Contains the 60-minute time series data for yeast genes, in
 This Python script is designed to analyze 60-minute time series data of yeast gene transcripts to calculate their half-lives. It employs a meticulous process to handle the data, computing the half-lives for each transcript across three replicates. The script utilizes the curve_fit function from the scipy.optimize module to perform exponential curve fitting, a crucial step in deriving accurate half-life values. Additionally, it identifies genes with significantly high (top 10%) and low (bottom 10%) half-lives, providing insights into the dynamics of gene expression regulation.
 
 # Output Files:
-#DecayTimecourse.csv: The converted csv file from the input txt file.
+DecayTimecourse.csv: The converted csv file from the input txt file.
 
-#Half_Lives_Calculated.csv: Contains the computed half-lives for each yeast gene transcript.
+Half_Lives_Calculated.csv: Contains the computed half-lives for each yeast gene transcript.
 
-#high_half_life_genes.txt: Lists the identifiers of genes with high half-lives (top 10%).
+high_half_life_genes.txt: Lists the identifiers of genes with high half-lives (top 10%).
 
-#low_half_life_genes.txt: Lists the identifiers of genes with low half-lives (bottom 10%).
+low_half_life_genes.txt: Lists the identifiers of genes with low half-lives (bottom 10%).
 
 # Further Analysis:
 After identifying genes with high and low half-lives, I perform a functional enrichment analysis using online tools such as g:Profiler to explore the biological significance of these genes in yeast. Once the analysis is completed, the following PNG files are generated:
